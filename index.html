@@ -9,16 +9,15 @@
 </head>
 <body>
   <!-- ======= CABEÇALHO ======= -->
-  <header class="Htop">
+  <header class="Htop" id="topo">
     <div class="container">
       <nav class="Mtop">
         <h2 class="logo">JD Calhas</h2>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Nosso serviços</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#topo">Home</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
@@ -40,7 +39,7 @@
   </header>
 
   <!-- ======= SEÇÃO SOBRE ======= -->
-  <section class="sobre">
+  <section id="sobre" class="sobre">
     <div class="container">
       <h2>Sobre Nós</h2>
       <p>
@@ -53,7 +52,7 @@
   </section>
 
   <!-- ======= SEÇÃO SERVIÇOS ======= -->
-  <section class="servicos">
+  <section id="servicos" class="servicos">
     <div class="container">
       <h2>Nossos Serviços</h2>
       <div class="cards">
@@ -89,8 +88,35 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 JD Calhas e Rufos — Todos os direitos reservados.</p>
-      <small>Desenvolvido por Mavilom<a href="https://wa.me/5599999999999" class="btn"><i class="fa fa-whatsapp"></i> WhatsApp</a></small>
+      <small>Desenvolvido com 💙 por JD Web</small>
     </div>
   </footer>
+
+  <!-- ======= SCRIPT ======= -->
+  <script>
+    // Rolagem suave
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute('href'));
+        if (destino) {
+          window.scrollTo({
+            top: destino.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Menu fixo ao rolar
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.Mtop');
+      if (window.scrollY > 100) {
+        nav.classList.add('fixo');
+      } else {
+        nav.classList.remove('fixo');
+      }
+    });
+  </script>
 </body>
 </html>
