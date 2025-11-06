@@ -226,4 +226,22 @@
       font-size: 1.8em;
     }
   }
+  /* ======== MENU FIXO ======== */
+.Mtop.fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 42, 128, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 15px 5%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: 0.4s;
+  }
+  
+  /* ======== SUAVIZA SCROLL ======== */
+  html {
+    scroll-behavior: smooth;
+  }
   
