@@ -15,6 +15,7 @@
     width: 90%;
     max-width: 1100px;
     margin: auto;
+
   }
   
   /* ======== CABEÇALHO ======== */
@@ -25,39 +26,39 @@
     position: relative;
     overflow: hidden;
   }
-.Menu {
-  background-color: #83762c;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  transition: all 0.3s ease; /* Suaviza mudanças */
-}
-
-/* Remove o posicionamento fixo que quebra no mobile */
-@media (min-width: 768px) {
   .Menu {
-    justify-content: flex-start;
-    padding-right: 300px;
-    position: relative;
-    left: 15rem;
+    background-color: #83762c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease; /* Suaviza mudanças */
   }
-}
-
-/* Responsividade para telas pequenas */
-@media (max-width: 767px) {
-  .Menu {
-    left: 0;
-    padding: 10px;
-    font-size: 14px;
-    flex-direction: column; /* Empilha os itens */
+  
+  /* Remove o posicionamento fixo que quebra no mobile */
+  @media (min-width: 768px) {
+    .Menu {
+      justify-content: flex-start;
+      padding-right: 300px;
+      position: relative;
+      left: 15rem;
+    }
   }
-}
-
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 767px) {
+    .Menu {
+      left: 0;
+      padding: 10px;
+      font-size: 14px;
+      flex-direction: column; /* Empilha os itens */
+    }
+  }
+  
   .logo {
     font-size: 1.6em;
     font-weight: 700;
@@ -132,12 +133,15 @@
   /* ======== TEXTO DO TOPO ======== */
   .intro {
     text-align: center;
+    
   }
-  
+    
   .intro h1 {
     font-size: 2.4em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
   }
   
   .intro p {
@@ -157,10 +161,15 @@
     margin-bottom: 15px;
   }
   
-  .sobre p {
+  .sobre .paragrafo {
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
+    background-color: #c4f3d5;
+    border-radius: 1px 15px 1px 15px;
+    padding: 5rem;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
   
   /* ======== SERVIÇOS ======== */
@@ -331,5 +340,88 @@
 @media (max-width:720px){
   .hero-slider .prev{ left:8px } .hero-slider .next{ right:8px }
   .hero-slider .whats-cta{ font-size:14px; padding:8px 12px; right:8px; bottom:8px; }
+}
+
+/*CONTATOS*/
+
+.container02 {
+  background: none;
+  padding: 30px;
+  border-radius: 30px ;
+  box-shadow: none;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+  left: 55rem;
+}
+.container02:hover{
+  background-color: #b39f32;
+  transition: background-color 2s ease; /* suaviza a mudança de cor */
+
+}
+
+.container02 h1 {
+  color: #4d491c;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #000dff;
+}
+
+.buttonB {
+  background: #000dff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  
+}
+
+
+button:hover {
+  background: #3f4cff;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.contatos{
+  background-image: url('images.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  
+}
+.contatos:hover {
+  background-image: linear-gradient(rgba(233, 228, 202, 0.5), rgba(131,118,44,0.5)), url('images.jpg');
 }
 
