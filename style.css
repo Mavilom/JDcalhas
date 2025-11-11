@@ -25,16 +25,39 @@
     position: relative;
     overflow: hidden;
   }
-  .Menu{
+.Menu {
   background-color: #83762c;
-  padding: 10px;
-  padding-right: 300px;
-  position: relative;
-  left: 15rem;
+  padding: 10px 20px;
   border-radius: 10px;
   font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease; /* Suaviza mudanças */
+}
 
+/* Remove o posicionamento fixo que quebra no mobile */
+@media (min-width: 768px) {
+  .Menu {
+    justify-content: flex-start;
+    padding-right: 300px;
+    position: relative;
+    left: 15rem;
   }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 767px) {
+  .Menu {
+    left: 0;
+    padding: 10px;
+    font-size: 14px;
+    flex-direction: column; /* Empilha os itens */
+  }
+}
+
   .logo {
     font-size: 1.6em;
     font-weight: 700;
@@ -309,3 +332,4 @@
   .hero-slider .prev{ left:8px } .hero-slider .next{ right:8px }
   .hero-slider .whats-cta{ font-size:14px; padding:8px 12px; right:8px; bottom:8px; }
 }
+
