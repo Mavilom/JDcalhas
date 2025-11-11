@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa da Calhas</title>
+  <title>|| Casa da Calha</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
   <!-- ======= CABEÇALHO ======= -->
   <header class="Htop" id="topo">
     <div class="container">
       <nav class="Mtop">
-        <h2 class="logo">Casa da Calhas</h2>
-        <ul>
+        <h2 class="logo"><img src="https://www.cuiaba.calheiro.com/wp-content/uploads/2017/12/13191-NOZWYH-3.png" alt="CasaDaCalhas"></h2>
+        <ul class="Menu">
           <li><a href="#topo">Home</a></li>
           <li><a href="#sobre">Sobre nós</a></li>
           <li><a href="#servicos">Serviços</a></li>
@@ -22,8 +23,8 @@
       </nav>
 
       <div class="intro">
-        <h1>Especialistas em Calhas e Rufos</h1>
-        <p>
+        <h1 style="position: relative; left: -400px;">Especialistas em Calhas e Rufos</h1>
+        <p style="position: relative; left: -400px;">
           Instalação, manutenção e soluções sob medida. <br>
           <strong>Solicite seu orçamento sem compromisso!</strong>
         </p>
@@ -41,15 +42,98 @@
   <!-- ======= SEÇÃO SOBRE ======= -->
   <section id="sobre" class="sobre">
     <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>
-        A <strong>JD Calhas e Rufos</strong> é uma empresa especializada em 
+      <h2 style="font-size: 40px;">Sobre Nós</h2>
+      <p style="font-size: 20px;">
+        A <strong>Casa da Calha</strong> é uma empresa especializada em 
         soluções para proteção e acabamento de telhados. 
         Atuamos com seriedade, compromisso e qualidade, oferecendo 
         produtos duráveis e instalação profissional.
       </p>
     </div>
   </section>
+ <!--<section id="hero" class="hero-slider" aria-label="Destaques">
+    
+    <div class="slides">
+      <article class="slide is-active" style="--bg:url('./imagens/hero1.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>instalação e confecção</h1>
+          <p>Instalação de Calhas, Rufos e Condutores sob medida para sua obra.</p>
+          <a href="#contato" class="btn btn-hero">orçamento sem compromisso</a>
+        </div>
+      </article>
+  
+      <article class="slide" style="--bg:url('./imagens/hero2.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>projeto sob medida</h1>
+          <p>Fabricamos peças personalizadas para atender os clientes mais exigentes.</p>
+          <a href="#catalogo" class="btn btn-hero">ver catálogo</a>
+        </div>
+      </article>
+  
+      <article class="slide" style="--bg:url('./imagens/hero3.jpg')">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>manutenção e limpeza</h1>
+          <p>Evite infiltrações, vazamentos e entupimentos com manutenção periódica.</p>
+          <a href="#servicos" class="btn btn-hero">nossos serviços</a>
+        </div>
+      </article>
+    </div>-->
+  <!-- HERO SLIDER -->
+<section id="hero" class="hero-slider" aria-label="Destaques">
+  <div class="slides">
+    <article class="slide is-active" style="--bg:url('./imagens/hero1.jpg')">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>instalação e confecção</h1>
+        <p>Instalação de Calhas, Rufos e Condutores sob medida para sua obra.</p>
+        <a href="#contato" class="btn btn-hero">orçamento sem compromisso</a>
+      </div>
+    </article>
+
+    <article class="slide" style="--bg:url('./imagens/hero2.jpg')">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>projeto sob medida</h1>
+        <p>Fabricamos peças personalizadas para atender os clientes mais exigentes.</p>
+        <a href="#catalogo" class="btn btn-hero">ver catálogo</a>
+      </div>
+    </article>
+
+    <article class="slide" style="--bg:url('./imagens/hero3.jpg')">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>manutenção e limpeza</h1>
+        <p>Evite infiltrações e entupimentos com manutenção periódica.</p>
+        <a href="#servicos" class="btn btn-hero">nossos serviços</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Controles -->
+  <button class="nav prev" aria-label="Slide anterior">❮</button>
+  <button class="nav next" aria-label="Próximo slide">❯</button>
+  <div class="dots" role="tablist" aria-label="Seleção de slides"></div>
+
+  <!-- CTA WhatsApp flutuante (opcional) -->
+  <a class="whats-cta" href="https://wa.me/5599999999999" target="_blank" rel="noopener">
+    <i class="fa fa-whatsapp"></i> Clique e fale conosco
+  </a>
+</section>
+
+    <!-- Controles -->
+    <button class="nav prev" aria-label="Slide anterior">❮</button>
+    <button class="nav next" aria-label="Próximo slide">❯</button>
+    <div class="dots" role="tablist" aria-label="Seleção de slides"></div>
+  
+    <!-- CTA WhatsApp flutuante -->
+    <a class="whats-cta" href="https://wa.me/5599999999999" target="_blank" rel="noopener">
+      <i class="fa fa-whatsapp"></i> Clique e fale conosco
+    </a>
+  </section>
+  
 
   <!-- ======= SEÇÃO SERVIÇOS ======= -->
   <section id="servicos" class="servicos">
@@ -117,7 +201,69 @@
         nav.classList.remove('fixo');
       }
     });
-  </script>
+   
+(() => {
+  const slider = document.querySelector('.hero-slider');
+  if (!slider) return;
+
+  const slidesEl = slider.querySelector('.slides');
+  const slides = [...slider.querySelectorAll('.slide')];
+  const prev = slider.querySelector('.prev');
+  const next = slider.querySelector('.next');
+  const dotsWrap = slider.querySelector('.dots');
+
+  let i = 0, auto = null;
+  const DURATION = 6000; // 6s
+
+  // cria dots
+  slides.forEach((_, idx) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', `Ir para o slide ${idx+1}`);
+    b.addEventListener('click', () => go(idx, true));
+    dotsWrap.appendChild(b);
+  });
+
+  function updateUI(){
+    slidesEl.style.transform = `translateX(${-i * 100}%)`;
+    dotsWrap.querySelectorAll('button').forEach((b,idx)=>{
+      b.setAttribute('aria-selected', idx===i ? 'true' : 'false');
+    });
+  }
+  function go(to, stopAuto=false){
+    const total = slides.length;
+    i = (to + total) % total;
+    updateUI();
+    if (stopAuto) restartAuto();
+  }
+  const nextSlide = () => go(i+1);
+  const prevSlide = () => go(i-1);
+
+  prev.addEventListener('click', prevSlide);
+  next.addEventListener('click', nextSlide);
+
+  // autoplay
+  const startAuto = () => auto = setInterval(nextSlide, DURATION);
+  const stopAuto  = () => { if (auto) clearInterval(auto); auto = null; };
+  const restartAuto = () => { stopAuto(); startAuto(); };
+
+  slider.addEventListener('mouseenter', stopAuto);
+  slider.addEventListener('mouseleave', startAuto);
+  slider.addEventListener('focusin', stopAuto);
+  slider.addEventListener('focusout', startAuto);
+
+  // teclado
+  slider.addEventListener('keydown', (e)=>{
+    if (e.key === 'ArrowRight') nextSlide();
+    if (e.key === 'ArrowLeft')  prevSlide();
+  });
+  slider.setAttribute('tabindex','0');
+
+  // init
+  updateUI(); startAuto();
+})();
+</script>
 </body>
 </html>
+
 
