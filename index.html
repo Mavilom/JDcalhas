@@ -42,14 +42,15 @@
   <!-- ======= SEÇÃO SOBRE ======= -->
   <section id="sobre" class="sobre">
     <div class="container">
-      <h2 class="paragrafos">Sobre Nós</h2>
-      <p class="paragrafo">
-        A <strong>Casa da Calha</strong> é uma empresa especializada em 
-        soluções para proteção e acabamento de telhados. 
-        Atuamos com seriedade, compromisso e qualidade, oferecendo 
-        produtos duráveis e instalação profissional.
-      </p>
-    </div>
+      <button class="btn" id="openModal">Sobre a Empresa</button>
+  <!-- Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <p><strong>Casa da Calha</strong> é uma empresa especializada em soluções para proteção e acabamento de telhados. 
+      Atuamos com seriedade, compromisso e qualidade, oferecendo produtos duráveis e instalação profissional.</p>
+  </div>
+</div>
   </section>
  <!--<section id="hero" class="hero-slider" aria-label="Destaques">
     
@@ -290,6 +291,18 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   }, 3000);
 });
 
+ //MODAL
+  const modal = document.getElementById("myModal");
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.onclick = () => modal.style.display = "flex";
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (event) => {
+    if (event.target === modal) modal.style.display = "none";
+  };
+
 </script>
 </body>
 </html>
+
