@@ -120,10 +120,11 @@
     padding: 12px 25px;
     background: #ffcc00;
     color: #002b80;
-    font-weight: 600;
+    font-weight: 800;
     border-radius: 25px;
     text-decoration: none;
     transition: 0.3s;
+    
   }
   
   .btn:hover {
@@ -171,6 +172,7 @@
     font-size: 25px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
+  .paragrafo
   
   /* ======== SERVIÇOS ======== */
   .servicos {
@@ -425,3 +427,82 @@ button:hover {
   background-image: linear-gradient(rgba(233, 228, 202, 0.5), rgba(131,118,44,0.5)), url('images.jpg');
 }
 
+/* modal*/
+ /* Botão para abrir o modal */
+ .btn {
+  background: linear-gradient(135deg, #244d02, #4ca77a);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Fundo do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background: linear-gradient(145deg, #e8ecea, #e9ecea);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 250%;
+  max-width: 500px;
+  text-align: center;
+  color: #2c2c2c;
+  position: relative;
+}
+
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Texto */
+.modal-content p {
+  font-size: 1.50rem;
+  line-height: 1.6;
+  
+}
+
+strong {
+  color: #2b7045;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+}
