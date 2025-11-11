@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -12,7 +13,7 @@
   <header class="Htop" id="topo">
     <div class="container">
       <nav class="Mtop">
-        <h2 class="logo"><img src="Casa.png" alt="CasaDaCalhas"></h2>
+        <h2 class="logo"><img src="https://www.cuiaba.calheiro.com/wp-content/uploads/2017/12/13191-NOZWYH-3.png" alt="CasaDaCalhas"></h2>
         <ul class="Menu">
           <li><a href="#topo">Home</a></li>
           <li><a href="#sobre">Sobre nós</a></li>
@@ -41,8 +42,8 @@
   <!-- ======= SEÇÃO SOBRE ======= -->
   <section id="sobre" class="sobre">
     <div class="container">
-      <h2 style="font-size: 40px;">Sobre Nós</h2>
-      <p style="font-size: 20px;">
+      <h2 class="paragrafos">Sobre Nós</h2>
+      <p class="paragrafo">
         A <strong>Casa da Calha</strong> é uma empresa especializada em 
         soluções para proteção e acabamento de telhados. 
         Atuamos com seriedade, compromisso e qualidade, oferecendo 
@@ -122,18 +123,6 @@
   </a>
 </section>
 
-    <!-- Controles -->
-    <button class="nav prev" aria-label="Slide anterior">❮</button>
-    <button class="nav next" aria-label="Próximo slide">❯</button>
-    <div class="dots" role="tablist" aria-label="Seleção de slides"></div>
-  
-    <!-- CTA WhatsApp flutuante -->
-    <a class="whats-cta" href="https://wa.me/5599999999999" target="_blank" rel="noopener">
-      <i class="fa fa-whatsapp"></i> Clique e fale conosco
-    </a>
-  </section>
-  
-
   <!-- ======= SEÇÃO SERVIÇOS ======= -->
   <section id="servicos" class="servicos">
     <div class="container">
@@ -160,18 +149,41 @@
 
   <!-- ======= CONTATO ======= -->
   <section id="contato" class="contato">
-    <div class="container">
-      <h2>Entre em Contato</h2>
+    <div class="container01">
+      <h2><strong>Entre em Contato</strong> </h2>
       <p>Solicite um orçamento agora mesmo!</p>
       <a href="https://wa.me/5599999999999" class="btn"><i class="fa fa-whatsapp"></i> WhatsApp</a>
     </div>
   </section>
+  <section class="contatos">
+  <div class="container02">
+    <h1>Entre em Contato</h1>
+    <form id="contactForm">
+      <div class="input-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button class="buttonB" type="submit">Enviar</button>
+    </form>
+    <p id="successMessage" class="success-message"></p>
+  </div>
+</section>
   <!-- ======= RODAPÉ ======= -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Casa da Calha — Todos os direitos reservados.</p>
-      <small>Desenvolvido pro Mavilom</small>
+      <small>Desenvolvido por Olivam Josias</small>
     </div>
   </footer>
 
@@ -261,11 +273,23 @@
   // init
   updateUI(); startAuto();
 })();
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // impede o recarregamento da página
+
+  // Mostra a mensagem de sucesso
+  const successMessage = document.getElementById("successMessage");
+  successMessage.textContent = "Mensagem enviada com sucesso!";
+  successMessage.style.opacity = "1";
+
+  // Limpa os campos
+  this.reset();
+
+  // Oculta a mensagem depois de alguns segundos
+  setTimeout(() => {
+    successMessage.style.opacity = "0";
+  }, 3000);
+});
+
 </script>
 </body>
 </html>
-
-
-
-
-
