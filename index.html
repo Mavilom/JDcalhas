@@ -42,13 +42,26 @@
   <!-- ======= SEÇÃO SOBRE ======= -->
   <section id="sobre" class="sobre">
     <div class="container">
-      <button class="btn" id="openModal">Sobre a Empresa</button>
+      <button class="btn" id="openModal">Missão</button>
+      <button class="btn" id="flashModal">Visão</button>
+      <button class="btn" id="startModal">Valores</button>
   <!-- Modal -->
 <div class="modal" id="myModal">
   <div class="modal-content">
     <span class="close" id="closeModal">&times;</span>
-    <p><strong>Casa da Calha</strong> é uma empresa especializada em soluções para proteção e acabamento de telhados. 
-      Atuamos com seriedade, compromisso e qualidade, oferecendo produtos duráveis e instalação profissional.</p>
+    <p><strong>Missão Casa da Calha</strong> ????????????????????????????? <br>??????????????????.</p>
+  </div>
+</div>
+<div class="modal" id="mayModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <p><strong>Visão Casa da Calha</strong> ????????????????????????????? <br>??????????????????.</p>
+  </div>
+</div>
+<div class="modal" id="meyModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <p><strong>Valores Casa da Calha</strong> ????????????????????????????? <br>??????????????????.</p>
   </div>
 </div>
   </section>
@@ -295,6 +308,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   const modal = document.getElementById("myModal");
   const openBtn = document.getElementById("openModal");
   const closeBtn = document.getElementById("closeModal");
+  
 
   openBtn.onclick = () => modal.style.display = "flex";
   closeBtn.onclick = () => modal.style.display = "none";
@@ -305,4 +319,5 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 </script>
 </body>
 </html>
+
 
